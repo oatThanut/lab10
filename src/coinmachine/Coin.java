@@ -63,7 +63,7 @@ public class Coin /*TODO implements Comparable<Coin> */ {
 	public boolean equals(Object obj) {
 //TODO Write a correct equals method for Coin.
 //     You can assume that the currency is never null.
-		if(obj instanceof Coin && this.value == ((Coin)obj).getValue()){
+		if((Coin)obj instanceof Coin && this.value == ((Coin)obj).getValue()){
 			return true;
 		}else{
 			return false;
